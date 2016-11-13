@@ -33,16 +33,6 @@ class App extends Component {
       <div className="container">
         <header>
           <h1>Meteor Todo List</h1>
-
-            <label className="hide-completed">
-              <input
-                type="checkbox"
-                readOnly
-                checked={this.state.hideCompleted}
-                onClick={this.toggleHideCompleted.bind(this)}
-              />
-              Hide Completed Tasks
-            </label>
             
           {/* The form is going to allow me to add new tasks */}
             <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
